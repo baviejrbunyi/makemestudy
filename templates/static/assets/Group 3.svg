@@ -1,0 +1,12 @@
+<svg width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 3">
+<line id="Line 1" y1="58.05" x2="80" y2="58.05" stroke="black"/>
+<line id="Line 2" x1="0.5" y1="39.35" x2="0.5" y2="58.55" stroke="black"/>
+<line id="Line 3" x1="80.5" y1="39.35" x2="80.5" y2="58.55" stroke="black"/>
+<g id="Group 2">
+<line id="Line 5" x1="54.9796" y1="35.3195" x2="40.5796" y2="48.1195" stroke="black"/>
+<line id="Line 6" y1="-0.5" x2="19.2666" y2="-0.5" transform="matrix(-0.747409 -0.664364 -0.664364 0.747409 39.7526 48.95)" stroke="black"/>
+<line id="Line 4" x1="40.2526" y1="0.949997" x2="40.2526" y2="48.95" stroke="black"/>
+</g>
+</g>
+</svg>

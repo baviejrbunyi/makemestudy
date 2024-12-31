@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<!-- Correct path for CSS -->
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+  	
+  	<title>make me study | Home</title>
+
+  	<!-- Correct path for favicon -->
+  	<link rel="shortcut icon" href="{{ url_for('static', filename='assets/logo.png') }}" type="image/x-icon">
+</head>
+<body>
+  	
+  	<div class="index">
+    		<div class="logo">
+      			<!-- Correct path for logo image -->
+      			<img class="logo-icon" alt="" src="{{ url_for('static', filename='assets/logo.png') }}">
+      			<div class="make-me-study">make me study</div>
+    		</div>
+    		<div class="tagline">AI-powered solution designed to optimize your learning experience, boost productivity, and help you achieve smarter, more effective results every time you study.</div>
+    			
+            <form id="study-plan-form" method="POST" enctype="multipart/form-data" action="/submit">
+            
+            <div class="submit-form">
+      			<div class="duration">
+        				<div class="num-of-days">
+          					<div class="num-of-days-child">
+          					</div>
+          					<input type="number" name="number-of-days" id="number-of-days-field" placeholder="Enter number of days" class="number-of-days">
+        				</div>
+        				<div class="time">
+          					<div class="start-time">
+            						<div class="start-time-child">
+            						</div>
+            						<select name="start-time" id="start-time-dropdown" class="start-time-dropdown">
+            							<option value="" disabled selected>Select Start Time</option>
+            							<option value="08:00">08:00 AM</option>
+            							<option value="09:00">09:00 AM</option>
+            							<option value="10:00">10:00 AM</option>
+            						</select>
+          					</div>
+          					<div class="end-time">
+            						<div class="end-time-child">
+            						</div>
+            						<select name="end-time" id="end-time-dropdown" class="end-time-dropdown">
+            							<option value="" disabled selected>Select End Time</option>
+            							<option value="05:00">05:00 PM</option>
+            							<option value="06:00">06:00 PM</option>
+            							<option value="07:00">07:00 PM</option>
+            						</select>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="file-placeholder" id="file-placeholder">
+        				<div class="file-placeholder-child">
+        				</div>
+        				<div class="upload-image" id="upload-image">
+          					<div class="choose-a-file">Choose a file or Drag it here</div>
+          					<!-- Correct path for SVG image -->
+          					<img class="upload-image-child" alt="" src="{{ url_for('static', filename='assets/Group 3.svg') }}">
+        				</div>
+      			</div>
+      			<input type="file" name="file" id="file-input" accept=".pdf, .docx" style="display:none;">
+            </div>
+
+            <div class="generate-button">
+      			<button type="submit" class="generate-study-plan">Generate Study Plan</button>
+            </div>
+            
+            </form>
+            
+            <div id="error-message" class="error-message">Invalid file type. Only .pdf or .docx allowed.</div>
+  	</div>
+  	
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

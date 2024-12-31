@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    line-height: normal;
+    background-color: #b6cbbd;
+    font-family: Poppins, sans-serif;
+}
+
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.make-me-study {
+    font-size: 60px;
+    font-family: Kavoon;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.tagline {
+    width: 800px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.num-of-days input,
+.start-time select,
+.end-time select {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #754e1a;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.file-placeholder {
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #754e1a;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-placeholder.dragover {
+    background-color: #e9f7e9;
+    border-color: #4caf50;
+}
+
+.file-placeholder .upload-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-image-child {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.file-placeholder .choose-a-file {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.file-list li .remove-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.file-list li .remove-btn:hover {
+    background-color: #e63939;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.generate-study-plan {
+    border-radius: 25px;
+    background-color: #cba35c;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.generate-study-plan:hover {
+    background-color: #b38d52;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* File upload section styles */
+#error-message {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+#error-message.visible {
+    display: block;
+}
+
+.remove-file {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.remove-file:hover {
+    background-color: #e63939;
+}
+
+button[type="submit"]:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+button[type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
