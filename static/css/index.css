@@ -27,17 +27,54 @@ body {
 }
 
 .tagline {
-    width: 800px;
+    width: 100%;
+    max-width: 800px; /* Optional: controls the width of the tagline */
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
     line-height: 1.5;
 }
 
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 30px; /* Space between elements */
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between form elements */
+}
+
+.duration {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.time {
+    display: flex;
+    gap: 20px; /* Space between start-time and end-time */
+    justify-content: center; /* Centers the elements horizontally within the .time container */
+}
+
+.start-time, .end-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns the select elements vertically within their containers */
+}
+
 .num-of-days input,
 .start-time select,
 .end-time select {
-    width: 100%;
+    width: 200px; /* Controls input width */
     height: 40px;
     border: 2px solid #754e1a;
     border-radius: 7px;
@@ -45,15 +82,6 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     outline: none;
-}
-
-.duration {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
 }
 
 .file-placeholder {
@@ -155,20 +183,18 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     transition: background-color 0.3s;
+    margin-top: 40px;
 }
 
 .generate-study-plan:hover {
     background-color: #b38d52;
 }
 
-.index {
+.generate-button {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 20px;
-    gap: 20px;
+    align-items: center;
+    width: 100%;
 }
 
 input[type="file"] {
