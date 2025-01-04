@@ -5,15 +5,21 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+div {
+    font-family: Poppins;
+}
+
 .logo-icon {
     width: 50px;
     position: relative;
     height: 50px;
     object-fit: cover;
 }
+
 .make-me-study {
     position: relative;
 }
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -21,6 +27,7 @@ body {
     justify-content: center;
     gap: 10px;
 }
+
 .group-child {
     position: absolute;
     top: 0px;
@@ -30,58 +37,145 @@ body {
     width: 300px;
     height: 50px;
 }
+
 .content-summary {
     position: absolute;
     top: 11.5px;
     left: 67px;
 }
+
 .rectangle-parent {
     width: 300px;
     position: relative;
     height: 50px;
 }
-.group-wrapper {
+
+.content-summary-button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.study-plan {
-    position: absolute;
-    top: 11.5px;
-    left: 102.5px;
+
+.study-plan-button {
+    width: 300px;
+    border-radius: 25px;
+    background-color: #cba35c;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 99px;
+    box-sizing: border-box;
 }
-.frame-parent {
+
+.upper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
+}
+
+.generate-button {
+    width: 300px;
+    border-radius: 25px;
+    background-color: #754e1a;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 86px;
+    box-sizing: border-box;
+}
+
+.download-button {
+    width: 300px;
+    border-radius: 25px;
+    background-color: #754e1a;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 103px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+    color: #f8e1b7;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     font-size: 18px;
     font-family: Poppins;
 }
-.logo-parent {
+
+.navigation {
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
 }
+
 .lorem-ipsum-dummy {
     margin-bottom: 0px;
 }
+
 .lorem-ipsum-dummy-text-used-i {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
-    padding-left: 24px;
+    padding-left: 16px;
 }
-.lorem-ipsum-dummy-container {
+
+.content {
     align-self: stretch;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
 }
-.what-is-lorem-ipsum-parent {
+
+.link-1 {
+    width: 640px;
+    position: relative;
+    display: inline-block;
+}
+
+.list-of-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.content-summary1 {
     align-self: stretch;
     flex: 1;
     border-radius: 25px;
@@ -95,6 +189,7 @@ body {
     gap: 10px;
     font-family: Poppins;
 }
+
 .cotent-summary {
     width: 100%;
     position: relative;
@@ -114,160 +209,116 @@ body {
     font-family: Kavoon;
 }
 
-
-.what-is-lorem-ipsum-parent::-webkit-scrollbar {
-    display: none;
-
-}
-
-.what-is-lorem-ipsum-parent.study-plan-container {
+.content-summary1.hidden {
     display: none;
 }
 
-.group-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 25px;
-    background-color: #cba35c;
-    width: 300px;
-    height: 50px;
+.study-plan2.hidden {
+    display: none;
 }
-.content-summary {
-    position: absolute;
-    top: 11.5px;
-    left: 67px;
-}
-.rectangle-parent {
-    width: 300px;
+
+
+.title {
     position: relative;
-    height: 50px;
+    font-size: 30px;
 }
-.group-wrapper {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+
+.schedule1 {
+    position: relative;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.task {
+    flex: 1;
+    position: relative;
+}
+
+.header {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Poppins;
+}
+
+.div {
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.row-1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.table {
+    align-self: stretch;
+    border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 13px;
 }
-.rectangle-group {
-    position: absolute;
-    top: 60px;
-    left: 0px;
-    width: 300px;
-    height: 50px;
-}
-.frame-parent {
-    width: 300px;
-    position: relative;
-    height: 110px;
-}
-.group-inner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 25px;
-    background-color: #754e1a;
-    width: 300px;
-    height: 50px;
-}
-.download {
-    position: absolute;
-    top: 11.5px;
-    left: 102.5px;
-}
-.rectangle-container {
-    width: 300px;
-    position: relative;
-    height: 50px;
-    color: #f8e1b7;
-}
-.group-parent {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-size: 18px;
-    font-family: Poppins;
-}
-.logo-parent {
+
+.schedule {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 15px;
+    font-family: Inter;
 }
-.what-is-lorem {
+
+.goals1 {
+    align-self: stretch;
     position: relative;
-    font-size: 30px;
 }
-.day-1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: inline-block;
-    width: 48px;
-}
-.group-icon {
-    position: absolute;
-    top: 37px;
-    left: 0px;
-    width: 640px;
-    height: 74.2px;
-}
-.day-1-parent {
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    width: 640px;
-    height: 111.2px;
-}
-.schedule {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 20px;
-}
-.group-container {
-    width: 640px;
-    position: relative;
-    height: 151.2px;
-    flex-shrink: 0;
-    font-size: 18px;
-}
-.goals {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
+
 .i-will-be {
     margin-bottom: 0px;
 }
+
 .i-will-be-able-to-explain-the {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
-    padding-left: 24px;
+    padding-left: 16px;
 }
-.i-will-be-container {
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    font-size: 18px;
-    display: inline-block;
-    width: 640px;
-}
-.goals-parent {
-    width: 640px;
+
+.list-of-goals-container {
+    align-self: stretch;
     position: relative;
-    height: 256px;
-    flex-shrink: 0;
+    font-size: 16px;
 }
-.frame-child {
+
+.goals {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.checklist1 {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+}
+
+.checkbox {
     width: 18px;
     position: relative;
     background-color: rgba(217, 217, 217, 0);
@@ -275,61 +326,26 @@ body {
     box-sizing: border-box;
     height: 18px;
 }
-.frame-div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+
+.task2 {
+    align-self: stretch;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
 }
-.rectangle-parent1 {
-    position: absolute;
-    top: 37px;
-    left: 0px;
+
+.checklist {
+    align-self: stretch;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
 }
-.rectangle-parent2 {
-    position: absolute;
-    top: 74px;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-}
-.rectangle-parent3 {
-    position: absolute;
-    top: 111px;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-}
-.frame-group {
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    width: 367px;
-    height: 138px;
-    font-size: 18px;
-}
-.checklist-parent {
-    width: 367px;
-    position: relative;
-    height: 178px;
-    flex-shrink: 0;
-}
-.what-is-lorem-ipsum-parent {
+
+.study-plan2 {
     align-self: stretch;
     flex: 1;
     border-radius: 25px;
@@ -341,9 +357,10 @@ body {
     justify-content: flex-start;
     padding: 50px;
     gap: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Poppins;
 }
+
 .study-plan {
     width: 100%;
     position: relative;
@@ -363,5 +380,6 @@ body {
     font-family: Kavoon;
 }
 
-
-
+.study-plan2::-webkit-scrollbar {
+    display: none;
+}
